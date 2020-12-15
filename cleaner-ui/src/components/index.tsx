@@ -1,4 +1,8 @@
 import React, {useState} from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Home from './Home'
+import About from './About'
+
 
 function App() {
   return (
@@ -12,6 +16,12 @@ function App() {
         </NavItem>
       </Navbar>
       <CenterSquare/>
+      <Router>
+        <Switch>
+          <Route path="/" component = {Home} exact/>
+          <Route path="/about" component = {About} exact/>
+        </Switch>
+      </Router>
     </div>
   );
 }
@@ -22,7 +32,12 @@ function CenterSquare(){
   )
 }
 
-function Navbar(props){
+interface Props {
+  icon?: string; 
+  children?: JSX.Element | string | JSX.Element[];
+}
+
+function Navbar(props:Props){
   return(
     <nav className="navbar">
       <ul className="navbar-nav"> {props.children} </ul>
@@ -30,7 +45,7 @@ function Navbar(props){
   )
 }
 
-function NavItem(props){
+function NavItem(props:Props){
 
   const [open, setOpen] = useState(false);
 
@@ -47,7 +62,13 @@ function NavItem(props){
 
 function DropdownMenu(){
 
-  function DropdownItem(props){
+  interface Icons {
+    leftIcon?: string; 
+    rightIcon?: string; 
+    children?: JSX.Element | string;
+  }
+
+  function DropdownItem(props:Icons){
     return(
       <a href='#' className="menu-item">
         <span className="icon-button">{props.leftIcon}</span>
