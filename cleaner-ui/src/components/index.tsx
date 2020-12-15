@@ -7,15 +7,14 @@ import About from './About'
 function App() {
   return (
     <div>
-      <Navbar>
+       <Navbar>
         <NavItem icon="$$$"></NavItem>
         <NavItem icon="$$$"></NavItem>
         <NavItem icon="$$$"></NavItem>
         <NavItem>
-          <DropdownMenu></DropdownMenu>
+        <DropdownMenu></DropdownMenu>
         </NavItem>
       </Navbar>
-      <CenterSquare/>
       <Router>
         <Switch>
           <Route path="/" component = {Home} exact/>
@@ -24,12 +23,6 @@ function App() {
       </Router>
     </div>
   );
-}
-
-function CenterSquare(){
-  return(
-    <a className="center-square">Hello</a>
-  )
 }
 
 interface Props {
