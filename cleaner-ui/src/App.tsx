@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import Home from './modules/Home/Home'
 import About from './modules/About/About'
 
@@ -27,7 +27,7 @@ function App() {
 
 interface Props {
   icon?: string; 
-  children?: JSX.Element | string | JSX.Element[];
+  children?: React.ReactNode;
 }
 
 function Navbar(props:Props){
@@ -79,7 +79,7 @@ function DropdownMenu(){
       <DropdownItem>My Profile</DropdownItem>
       <DropdownItem
         rightIcon={'>'}>
-        <div> My Prof </div>
+        <div> Second tab </div>
       </DropdownItem>
 
     </div>
