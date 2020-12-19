@@ -1,0 +1,47 @@
+.container {
+    display: flex; 
+    margin-top: 1rem;
+}
+
+
+.left-module{
+    position: relative; 
+    padding: 10px;
+    margin: 2px;
+    width: 25%;
+}
+
+.left-card {
+    color: var(--text-dark);
+    text-align: center;
+    position: relative;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-light);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.center-module {
+    position: relative; 
+    padding: 10px;
+    padding-left: 4%;
+    margin: 2px;
+    width: 60%;
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.center-card {
+    color: var(--text-dark);
+    text-align: center;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-light);
+    margin: 2px; 
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
