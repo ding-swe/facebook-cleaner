@@ -19,7 +19,7 @@ code {
   --text-color: #dadce1;
   --text-dark: #46474b;
   --nav-size: 60px; 
-  --border: 1px solid #474a4d;
+  /* --border: 1px solid #474a4d; */
   --border-radius: 8px;
   --speed: 500ms; 
 }

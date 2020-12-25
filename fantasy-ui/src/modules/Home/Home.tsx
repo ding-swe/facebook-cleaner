@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './Home.css';
+import HomeCard from '../../components/HomeCard/HomeCard'
 
 export default function Home(){
     return (
@@ -16,10 +17,7 @@ export default function Home(){
                     <h1> Home </h1>
                     <Link to="/About">About </Link>
                 </div>
-                <div className="center-card">
-                    <h1> Home </h1>
-                    <Link to="/About">About </Link>
-                </div>
+                <HomeCard></HomeCard>
                 <div className="center-card">
                     <h1> Home </h1>
                     <Link to="/About">About </Link>
