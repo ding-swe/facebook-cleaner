@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './modules/Home/Home'
 import About from './modules/About/About'
 
@@ -7,20 +7,20 @@ import About from './modules/About/About'
 function App() {
   return (
     <div>
-       <Navbar>
-        <NavItem icon="$$$"></NavItem>
-        <NavItem icon="$$$"></NavItem>
-        <NavItem icon="$$$"></NavItem>
-        <NavItem>
-        <DropdownMenu></DropdownMenu>
-        </NavItem>
-      </Navbar>
-      <Router>
-        <Switch>
-          <Route path="/" component = {Home} exact/>
-          <Route path="/about" component = {About} exact/>
-        </Switch>
-      </Router>
+        <Navbar>
+            <NavItem icon="$$$"></NavItem>
+            <NavItem icon="$$$"></NavItem>
+            <NavItem icon="$$$"></NavItem>
+            <NavItem>
+                <DropdownMenu></DropdownMenu>
+            </NavItem>
+        </Navbar>
+        <Router>
+            <Switch>
+                <Route path="/" component = {Home} exact/>
+                <Route path="/about" component = {About} exact/>
+            </Switch>
+        </Router>
     </div>
   );
 }

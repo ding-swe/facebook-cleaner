@@ -2,8 +2,14 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './Home.css';
 import HomeCard from '../../components/HomeCard/HomeCard'
+import { RootState } from '../../store/reducers';
+import { useSelector } from 'react-redux';
+import { CardData } from '../../store/statsReducer';
 
 export default function Home(){
+    const selectTodos = (state: RootState) => state.stats;
+    const todos = useSelector(selectTodos);
+
     return (
         <div className="container">
             <div className="left-module">
@@ -13,19 +19,11 @@ export default function Home(){
                 </div>
             </div>
             <div className="center-module">
-                <div className="center-card">
-                    <h1> Home </h1>
-                    <Link to="/About">About </Link>
-                </div>
-                <HomeCard></HomeCard>
-                <div className="center-card">
-                    <h1> Home </h1>
-                    <Link to="/About">About </Link>
-                </div> 
-                <div className="center-card">
-                    <h1> Home </h1>
-                    <Link to="/About">About </Link>
-                </div>
+                {
+                    todos.cards.map((card : CardData) =>(
+                        <HomeCard card={card}></HomeCard>
+                    ))
+                }
             </div>
         </div>
     )

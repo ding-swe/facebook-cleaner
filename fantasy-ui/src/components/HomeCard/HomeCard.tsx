@@ -1,12 +1,18 @@
 import React from 'react'
+import { CardData } from '../../store/statsReducer';
 
 import './HomeCard.css';
 
-export default function Home(){
+interface Props {
+    card: CardData; 
+  }
+
+
+export default function HomeCard(props: Props){
     return (
         <div className="center-card">
-            <h1> Home </h1>
-            <div> Lots of latin words. </div>
+            <h1> {props.card.title} </h1>
+            <div> {props.card.body} </div>
         </div>
     )
 }
