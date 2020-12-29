@@ -1,6 +1,7 @@
 .container {
     display: flex; 
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 
@@ -9,17 +10,22 @@
     padding: 10px;
     margin: 2px;
     width: 25%;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-light2);
 }
 
 .left-card {
     color: var(--text-dark);
-    text-align: center;
+    text-align: left;
     position: relative;
-    border: var(--border);
     border-radius: var(--border-radius);
     background-color: var(--bg-light);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 2rem; 
+    margin: 0.5rem;
+}
+
+.left-card h1 {
+    color: var(--text-accent)
 }
 
 .center-module {

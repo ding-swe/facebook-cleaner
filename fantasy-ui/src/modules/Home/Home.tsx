@@ -14,8 +14,10 @@ export default function Home(){
         <div className="container">
             <div className="left-module">
                 <div className="left-card">
-                    <h1> ReadMe </h1>
-                    <Link to="/About"> Long sentence with lots of text </Link>
+                    <div>
+                        <h1> ReadMe </h1>
+                        <Link to="/About"> Long sentence with lots of text </Link>
+                    </div>
                 </div>
             </div>
             <div className="center-module">
