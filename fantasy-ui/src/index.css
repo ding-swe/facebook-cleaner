@@ -6,8 +6,9 @@
   --bg-header: #0081A7;
   --bg-medium: #00AFB9; 
   --bg-accent: #F07167;
-  --bg-light: #FDFCDC;
+  --bg-light: #FFD275;
   --bg-light2: #FED9B7;
+  --bg-lighter: #fcf9f9;
   --bg-white: white;
   --bg: #f3f3f3;
   --text-color: #dadce1;
@@ -34,6 +35,11 @@ code {
     monospace;
 }
 
+hr {
+  background-color: var(--bg-medium);
+  margin-bottom: 1rem;
+}
+
 
 ul {
   list-style: none;
@@ -48,7 +54,7 @@ a {
 
 .navbar {
   height: var(--nav-size);
-  background-color: var(--bg-header);
+  background-color: var(--bg-light);
   padding: 0 1rem;
   border-bottom: var(--border);
 }

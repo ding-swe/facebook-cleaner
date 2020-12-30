@@ -14,11 +14,11 @@
 }
 
 .center-card h1{
-    color: #46474b;
+    color: var(--text-dark);
 }
 
 .center-card div{
-    background-color: var(--bg-light);
+    background-color: var(--bg-lighter);
     border-radius: var(--border-radius);
     padding: 1rem; 
 }

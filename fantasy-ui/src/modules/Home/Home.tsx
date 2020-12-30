@@ -16,7 +16,23 @@ export default function Home(){
                 <div className="left-card">
                     <div>
                         <h1> ReadMe </h1>
-                        <Link to="/About"> Long sentence with lots of text </Link>
+                        <hr></hr>
+                        <Link to="/About"> Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text. </Link>
+                    </div>
+                </div>
+                <div className="left-card">
+                    <div>
+                        <h1> ReadMe </h1>
+                        <hr></hr>
+                        <Link to="/About"> Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text.
+                            Long sentence with lots of text. Long sentence with lots of text. </Link>
                     </div>
                 </div>
             </div>
