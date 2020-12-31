@@ -23,7 +23,11 @@ const initialState : StatState = {
         {
             title: 'Hello2',
             body: 'Body2 Body2 Body2'
-        }
+        },
+        {
+            title: 'Hello3',
+            body: 'Body2 Body2 Body2'
+        },
     ]
 }
   

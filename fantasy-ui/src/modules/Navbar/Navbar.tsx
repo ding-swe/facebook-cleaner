@@ -6,16 +6,21 @@ interface Props {
     children?: React.ReactNode;
 }
 
-export function NavItem(props:Props){
-  
-    const [open, setOpen] = useState(false);
-  
+
+export function NavLogo(){
+  return(
+    <a href="#" className="nav-left">
+      fantaaskt
+    </a>
+  )
+}
+
+export function NavItem(props:Props){  
     return(
       <li className="nav-item">
-        <a href="#" className="nav-button-text" onClick={() => setOpen(!open)}>
+        <a href="#" className="nav-button-text">
           {props.icon}
         </a>
-        {open && props.children}
       </li>
     )
 }
@@ -70,7 +75,8 @@ export function DropdownMenu(){
 export default function Navbar(props:Props){
     return(
         <nav className="navbar">
-        <ul className="navbar-nav"> {props.children} </ul>
+          <NavLogo/>
+          <ul className="navbar-nav"> {props.children} </ul>
         </nav>
     )
 }

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './modules/Home/Home'
 import About from './modules/About/About'
-import Navbar, {NavItem, DropdownMenu, NavIcon} from './modules/Navbar/Navbar'
+import Navbar, {NavItem, DropdownMenu, NavIcon, NavLogo} from './modules/Navbar/Navbar'
 
 
 function App() {
