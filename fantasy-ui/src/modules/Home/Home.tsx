@@ -19,7 +19,7 @@ export default function Home(){
                         <hr></hr>
                         <Link to="/About"> Long sentence with lots of text.
                             Long sentence with lots of text. Long sentence with lots of text.
-                            Long sentence with lots of text. Long sentence with lots of text.
+                            Long <b>sentence</b> with lots of text. Long sentence with lots of text.
                             Long sentence with lots of text. Long sentence with lots of text.
                             Long sentence with lots of text. Long sentence with lots of text. </Link>
                     </div>

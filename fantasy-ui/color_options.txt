@@ -1,0 +1,21 @@
+
+:root {
+  --bg-header: #6D2BF9;
+  --bg-medium: #00AFB9; 
+  --bg-accent: #F07167;
+  --bg-light: #ffcd00;
+  --bg-light2: #FED9B7;
+  --bg-lighter: #fcf9f9;
+  --bg-white: white;
+  --bg: #f3f3f3;
+  --text-light: #dadce1;
+  --text-accent: #006ee9;
+  --text-highlight: #0086eb;
+  --text-dark: #46474b;
+  --nav-size: 60px; 
+  --border: 1px solid #48a4d4;
+  --border2: 1px solid #484a4d;
+  --shadow: #999ca1;
+  --border-radius: 8px;
+  --speed: 500ms; 
+}

@@ -2,18 +2,19 @@ import React, {useState} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './modules/Home/Home'
 import About from './modules/About/About'
+import Navbar, {NavItem, DropdownMenu, NavIcon} from './modules/Navbar/Navbar'
 
 
 function App() {
   return (
     <div>
         <Navbar>
-            <NavItem icon="$$$"></NavItem>
-            <NavItem icon="$$$"></NavItem>
-            <NavItem icon="$$$"></NavItem>
-            <NavItem>
+            <NavItem icon="About"></NavItem>
+            <NavItem icon="Careers"></NavItem>
+            <NavItem icon="Info"></NavItem>
+            <NavIcon>
                 <DropdownMenu></DropdownMenu>
-            </NavItem>
+            </NavIcon>
         </Navbar>
         <Router>
             <Switch>
@@ -21,67 +22,6 @@ function App() {
                 <Route path="/about" component = {About} exact/>
             </Switch>
         </Router>
-    </div>
-  );
-}
-
-interface Props {
-  icon?: string; 
-  children?: React.ReactNode;
-}
-
-function Navbar(props:Props){
-  return(
-    <nav className="navbar">
-      <ul className="navbar-nav"> {props.children} </ul>
-    </nav>
-  )
-}
-
-function NavItem(props:Props){
-
-  const [open, setOpen] = useState(false);
-
-  return(
-    <li className="nav-item">
-      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
-        {props.icon}
-      </a>
-
-      {open && props.children}
-    </li>
-  )
-}
-
-function DropdownMenu(){
-
-  interface Icons {
-    leftIcon?: string; 
-    rightIcon?: string; 
-    children?: JSX.Element | string;
-  }
-
-  function DropdownItem(props:Icons){
-    return(
-      <a href='#' className="menu-item">
-        <span className="icon-button">{props.leftIcon}</span>
-
-        {props.children}
-
-        <span className="icon-right">{props.rightIcon}</span>
-
-      </a>
-    )
-  }
-
-  return (
-    <div className="dropdown">
-      <DropdownItem>My Profile</DropdownItem>
-      <DropdownItem
-        rightIcon={'>'}>
-        <div> Second tab </div>
-      </DropdownItem>
-
     </div>
   );
 }
