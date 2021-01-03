@@ -14,7 +14,7 @@
     margin: 2px;
     width: 25%;
     border-radius: var(--border-radius);
-    background-color: var(--bg-lighter);
+    background-color: var(--bg-light-grey);
     display: flex; 
     flex-direction: column;
     height: 1%;

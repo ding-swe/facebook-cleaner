@@ -19,3 +19,15 @@
   --border-radius: 8px;
   --speed: 500ms; 
 }
+
+
+  --bg-light2: #FCE762;
+   --bg-header: #6D2BF9;
+ 
+
+ List of nice light hovers
+ f9c595 
+
+
+ List of header / bold blue color 
+ 6b6dd1 

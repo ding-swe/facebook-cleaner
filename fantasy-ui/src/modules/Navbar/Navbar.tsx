@@ -9,9 +9,14 @@ interface Props {
 
 export function NavLogo(){
   return(
-    <a href="#" className="nav-left">
-      fantaaskt
-    </a>
+    <div>
+      <a href="#" className="logo-a">
+        basket
+      </a>
+      <a href="#" className="logo-b">
+        base
+      </a>
+    </div>
   )
 }
 

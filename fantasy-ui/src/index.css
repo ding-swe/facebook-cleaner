@@ -6,17 +6,20 @@
   #648381 steel teal 
 */ 
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
   --bg-header: #6D2BF9;
   --bg-medium: #00AFB9; 
-  --bg-accent: #F07167;
-  --bg-light: #ffcd00;
-  --bg-light2: #FCE762;
-  --bg-lighter: #fcf9f9;
+  --bg-accent: #F07167; /* unused */ 
+  --bg-light: #ffcd00;  /* unused */ 
+  --bg-hover: #fad0ab;
+  --bg-light-grey: #FCFCFC;
   --bg-white: white;
   --bg: #f3f3f3;
   --text-light: #dadce1;
-  --text-accent: #006ee9;
+  --text-accent: #6b6dd1;
+  --text-accent-secondary: #f49f54;
   --text-highlight: #0086eb;
   --text-dark: #46474b;
   --nav-size: 60px; 
@@ -29,11 +32,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato';
   background: var(--bg);
 }
 

@@ -9,9 +9,9 @@ function App() {
   return (
     <div>
         <Navbar>
-            <NavItem icon="About"></NavItem>
-            <NavItem icon="Careers"></NavItem>
-            <NavItem icon="Info"></NavItem>
+            <NavItem icon="about"></NavItem>
+            <NavItem icon="careers"></NavItem>
+            <NavItem icon="info"></NavItem>
             <NavIcon>
                 <DropdownMenu></DropdownMenu>
             </NavIcon>

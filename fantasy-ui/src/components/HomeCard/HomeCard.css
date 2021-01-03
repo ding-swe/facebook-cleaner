@@ -19,7 +19,7 @@
 }
 
 .center-card div{
-    background-color: var(--bg-lighter);
+    background-color: var(--bg-light-grey);
     border-radius: var(--border-radius);
     padding: 1rem; 
 }

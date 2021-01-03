@@ -15,10 +15,14 @@
     display: flex;
 }
 
-.nav-left {
+.logo-a {
     padding-bottom: 7px; 
-    display: flex;
-    align-items: flex-end;
+    font-size: 34px;
+    color: var(--text-accent-secondary);    
+}
+
+.logo-b {
+    padding-bottom: 7px; 
     font-size: 34px;
     color: var(--text-accent);    
 }
@@ -44,7 +48,7 @@
 }
 
 .nav-button-text:hover {
-    background-color: var(--bg-light2);
+    background-color: var(--bg-hover);
     /* filter: brightness(1.2); */
 }
 
@@ -67,7 +71,7 @@
     top: 58px;
     width:300px; 
     transform:  translateX(-45%);
-    background-color: var(--bg-lighter);
+    background-color: var(--bg-light-grey);
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 1rem;
@@ -89,7 +93,7 @@
 
 .menu-item:hover {
     /* background-color: #525357; */
-    background-color: var(--bg-light2);
+    background-color: var(--bg-hover);
 }
 
 .icon-right {
