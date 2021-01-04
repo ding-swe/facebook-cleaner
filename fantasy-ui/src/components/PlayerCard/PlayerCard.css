@@ -3,15 +3,41 @@
     color: var(--text-dark);
     text-align: left;
     position: relative;
-    border-radius: var(--border-radius);
+    border-radius: calc(var(--border-radius)*3);
     /* background-color: var(--bg-white); */
-    background-color: lightcoral;
-    margin-top: 1rem;
-    width: 90%;
-    padding: 0.5rem;
+    background-color:var(--bg-light-grey);
+    margin-top: 0.2rem;
+    width: 94%;
+    height: 50px;
+    padding: 0.3rem;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
 }
 
 .player-card h1 {
     color: var(--text-accent);
     margin-bottom: 0rem;
+}
+
+
+.player-pic {
+    --button-size: calc(var(--nav-size) * 0.5 );
+    width: calc(var(--button-size)*0.75);
+    height: calc(var(--button-size)*0.75);
+    background-color: #484a4d;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms; 
+}
+
+
+.player-text {
+    padding: 0.4rem;
+    min-width: 230px;
 }

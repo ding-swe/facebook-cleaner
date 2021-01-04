@@ -12,14 +12,11 @@ export default function PlayerCard(){
     return (
         <div className="player-card">
             <div>
-                <h1> ReadMe </h1>
-                <hr></hr>
-                <Link to="/About"> Long sentence with lots of text.
-                    Long sentence with lots of text. Long sentence with lots of text.
-                    Long <b>sentence</b> with lots of text. Long sentence with lots of text.
-                    Long sentence with lots of text. Long sentence with lots of text.
-                    Long sentence with lots of text. Long sentence with lots of text. 
-                </Link>
+                <a href="#" className="icon-button">O</a>
+            </div>
+            <div className="player-text">
+                <b> Bam Adebayo (PF / C) </b>
+                <div style={{fontSize: "14px", paddingTop: "4px"}}> 16.4 pts, 11.1 rbs, 3.3 ast, 2 blks, 3 stls </div>
             </div>
         </div>
     )

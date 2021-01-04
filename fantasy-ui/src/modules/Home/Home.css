@@ -1,4 +1,6 @@
 .container {
+    --sidebar-collapsed-width: 57px;
+    --sidebar-expanded-width: 330px; 
     display: flex; 
     flex-direction: row;
     height:100%;
@@ -8,12 +10,19 @@
 .left-module{
     position: relative; 
     padding-bottom: 10px;
-    width: 25%;
+    width:var(--sidebar-collapsed-width);
     /* background-color: var(--bg-light-grey); */
-    background-color: lightseagreen;
+    background-color:var(--bg-light-grey);
     display: flex; 
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    transition: 500ms; 
+}
+
+.left-module:hover{
+    width:var(--sidebar-expanded-width);
 }
 
 
