@@ -16,13 +16,11 @@
 }
 
 .logo-a {
-    padding-bottom: 7px; 
     font-size: 34px;
     color: var(--text-accent-secondary);    
 }
 
 .logo-b {
-    padding-bottom: 7px; 
     font-size: 34px;
     color: var(--text-accent);    
 }
@@ -98,4 +96,14 @@
 
 .icon-right {
     margin-left: auto;
+}
+
+
+.blackbar {
+    height: 29px;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--shadow);
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
 }

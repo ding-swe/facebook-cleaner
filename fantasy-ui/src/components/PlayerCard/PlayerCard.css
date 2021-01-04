@@ -1,0 +1,17 @@
+
+.player-card {
+    color: var(--text-dark);
+    text-align: left;
+    position: relative;
+    border-radius: var(--border-radius);
+    /* background-color: var(--bg-white); */
+    background-color: lightcoral;
+    margin-top: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+}
+
+.player-card h1 {
+    color: var(--text-accent);
+    margin-bottom: 0rem;
+}

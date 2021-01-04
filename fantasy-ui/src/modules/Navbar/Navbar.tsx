@@ -9,7 +9,7 @@ interface Props {
 
 export function NavLogo(){
   return(
-    <div>
+    <div style={{paddingTop:'12px'}}>
       <a href="#" className="logo-a">
         basket
       </a>
@@ -79,10 +79,13 @@ export function DropdownMenu(){
 
 export default function Navbar(props:Props){
     return(
+      <div>
         <nav className="navbar">
           <NavLogo/>
           <ul className="navbar-nav"> {props.children} </ul>
         </nav>
+        <nav className="blackbar"></nav>
+      </div>
     )
 }
   

@@ -14,6 +14,7 @@
   --bg-accent: #F07167; /* unused */ 
   --bg-light: #ffcd00;  /* unused */ 
   --bg-hover: #fad0ab;
+  --bg-dark: #46474b;
   --bg-light-grey: #FCFCFC;
   --bg-white: white;
   --bg: #f3f3f3;
@@ -22,7 +23,7 @@
   --text-accent-secondary: #f49f54;
   --text-highlight: #0086eb;
   --text-dark: #46474b;
-  --nav-size: 60px; 
+  --nav-size: 60px;
   --border: 1px solid #48a4d4;
   --border2: 1px solid #484a4d;
   --shadow: #999ca1;
@@ -30,15 +31,19 @@
   --speed: 500ms; 
 }
 
-body {
-  margin: 0;
-  font-family: 'Lato';
-  background: var(--bg);
+#root {
+  height:100%; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  height:100%; 
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: var(--bg);
+  height: 100%; 
 }
 
 hr {
