@@ -3,17 +3,21 @@
     color: var(--text-dark);
     text-align: left;
     position: relative;
-    border-radius: calc(var(--border-radius)*3);
+    border-radius: calc(var(--border-radius)*2.5);
     /* background-color: var(--bg-white); */
     background-color:var(--bg-light-grey);
     margin-top: 0.2rem;
     width: 94%;
     height: 50px;
-    padding: 0.3rem;
+    padding: 2px 4px; 
     display: flex; 
     flex-direction: row;
     align-items: center;
     overflow: hidden;
+}
+
+.player-card:hover {
+    background-color: var( --bg-hover);
 }
 
 .player-card h1 {
@@ -23,13 +27,14 @@
 
 
 .player-pic {
-    --button-size: calc(var(--nav-size) * 0.5 );
-    width: calc(var(--button-size)*0.75);
-    height: calc(var(--button-size)*0.75);
-    background-color: #484a4d;
-    border-radius: 50%;
+    --button-size: calc(var(--nav-size) * 0.4 );
+    width: calc(var(--button-size));
+    height: calc(var(--button-size));
+    /* background-color: #484a4d; */
+    background-color: #f49f54;
+    border-radius: 32px;
     padding: 8px;
-    margin: 4px;
+    margin: 6px;
     display: flex;
     align-items: center;
     justify-content: center;

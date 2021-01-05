@@ -7,7 +7,7 @@ import Navbar, {NavItem, DropdownMenu, NavIcon} from './modules/Navbar/Navbar'
 
 function App() {
   return (
-    <div style={{height: '100%'}}>
+    <div style={{height: '100vh'}}>
         <Navbar>
             <NavItem icon="about"></NavItem>
             <NavItem icon="careers"></NavItem>

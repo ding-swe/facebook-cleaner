@@ -12,7 +12,7 @@ export default function PlayerCard(){
     return (
         <div className="player-card">
             <div>
-                <a href="#" className="icon-button">O</a>
+                <a href="#" className="player-pic">AB</a>
             </div>
             <div className="player-text">
                 <b> Bam Adebayo (PF / C) </b>
