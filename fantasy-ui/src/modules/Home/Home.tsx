@@ -20,23 +20,30 @@ export default function Home() {
   return (
     <div className="container">
       <div id="left-module" className={isOpen ? 'open' : 'closed'}>
-        <div id="player-cards-menu" className={isOpen ? 'open' : 'closed'}>
-          {isOpen && (
-            <div style={{ marginRight: '200px', paddingTop: '3px' }}>
-              players
-            </div>
-          )}
-          {isOpen ? (
-            <IoChevronBackSharp
-              fontSize="28px"
-              onClick={() => toggleSidebar()}
-            />
-          ) : (
-            <IoChevronForwardSharp
-              fontSize="28px"
-              onClick={() => toggleSidebar()}
-            />
-          )}
+        <div className="player-cards-menu">
+          <div id="player-cards-header" className={isOpen ? 'open' : 'closed'}>
+            {isOpen && (
+              <div style={{ marginRight: '200px', fontSize: '22px'}}>
+                players
+              </div>
+            )}
+            {isOpen ? (
+              <IoChevronBackSharp
+                fontSize="28px"
+                onClick={() => toggleSidebar()}
+              />
+            ) : (
+              <IoChevronForwardSharp
+                fontSize="28px"
+                onClick={() => toggleSidebar()}
+              />
+            )}
+          </div>
+          {isOpen && <div className="player-selectors">
+            <a>select all</a>
+            <a>deselect all</a>
+            <a>more</a>
+          </div>}
         </div>
         <div className="player-cards">
           <PlayerCard />
