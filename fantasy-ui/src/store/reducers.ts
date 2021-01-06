@@ -1,9 +1,8 @@
-import { combineReducers } from 'redux'
-import { statsReducer} from './statsReducer'
-
+import { combineReducers } from 'redux';
+import { statsReducer } from './statsReducer';
 
 export const rootReducer = combineReducers({
-    stats: statsReducer,
-  })
-  
-export type RootState = ReturnType<typeof rootReducer>
+  stats: statsReducer
+});
+
+export type RootState = ReturnType<typeof rootReducer>;

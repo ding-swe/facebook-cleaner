@@ -3,7 +3,7 @@
     --sidebar-expanded-width: 330px; 
     display: flex; 
     flex-direction: row;
-    height:calc(100vh - 90px);
+    height:calc(100vh - 94px);
 }
 
 
@@ -43,7 +43,7 @@
 .player-cards {
     position: relative;
     overflow: scroll;
-    height: 96%; 
+    height: 95%; 
 }
 
 ::-webkit-scrollbar {
