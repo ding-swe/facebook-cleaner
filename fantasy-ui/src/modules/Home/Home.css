@@ -1,20 +1,19 @@
 .container {
-    --sidebar-collapsed-width: 57px;
+    --sidebar-collapsed-width: 59px;
     --sidebar-expanded-width: 330px; 
     display: flex; 
     flex-direction: row;
     height:calc(100vh - 94px);
 }
 
-
-
 #left-module {
     position: relative; 
     padding-bottom: 10px;
     /* background-color: var(--bg-light-grey); */
     background-color:var(--bg-light-grey);
-    padding: 10px;
+    padding: 16px;
     transition: 500ms; 
+    overflow: hidden;
 }
 
 #left-module.closed {
@@ -28,7 +27,7 @@
 .player-cards-menu {
     display:"flex";
     flex-direction:"column";
-    margin: 11px; 
+    margin: 11px 4px; 
 }
 
 #player-cards-header {
@@ -49,14 +48,57 @@
     position: relative;
     overflow: scroll;
     height: 95%; 
+    justify-content: center;
 }
 
 .player-selectors {
     display:flex;
     justify-content: space-between;
-    padding: 12px 7px 5px; 
+    padding: 12px 0px 5px; 
     color: var(--text-accent);
     text-decoration: var(--text-dark) underline;
+    min-width: 293px;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--text-dark);
+}
+
+.player-selectors a{
+    cursor: pointer;
+    width: 33%; 
+    text-align: center;
+}
+
+.player-filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 36px;
+}
+
+.expandedPlayerMenu {
+    /* transition: calc(var(--speed) * 0.5); */
+    transition: 200ms;
+    padding: 9px;
+}
+
+.inputWithIcon {
+    display: flex; 
+    margin: 12px 12px 8px 8px; 
+}
+
+.inputWithIcon #BsSearch{
+    position: absolute;
+    font-size: 19px;
+    margin: 5px; 
+    padding-left: 6px;
+}
+
+.inputWithIcon input[type="text"]{
+    border-radius: calc(var(--border-radius)*2.5);
+    width: 80%;
+    padding-left: 40px;
+    height: 28px; 
+    border: var(--border-dark);
+    outline: none; 
 }
 
 ::-webkit-scrollbar {
