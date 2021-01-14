@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.player-card-select {
+    background-color: var( --bg-hover);
+}
+
 .player-card:hover {
     background-color: var( --bg-hover);
 }

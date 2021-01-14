@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import './PlayerCard.css';
-import { Link } from 'react-router-dom';
 import { Player } from '../../store/playersReducer';
 import {SELECT_PLAYER, DESELECT_PLAYER} from '../../store/actions'
 import { useDispatch } from 'react-redux';
@@ -21,15 +20,15 @@ export default function PlayerCard(props: Props) {
         if(isSelected){
             dispatch({
                 type: DESELECT_PLAYER,
-                meta: {
-                    id: 0 // todo 
+                payload: {
+                    playerId: player.id 
                 }
             });
             setSelected(false);
         } else{
             dispatch({
                 type: SELECT_PLAYER,
-                meta:{
+                payload:{
                     player: player
                 }
             });
@@ -37,11 +36,14 @@ export default function PlayerCard(props: Props) {
         }
     }
 
+    function getInitials(name:string){
+        return name.split(" ").map((n, i)=>(i==0||i==1)&&n[0]).filter(n=>n).join(""); 
+    }
     return (
-        <div className="player-card" onClick={()=>handleSelect(myPlayer)}>
+        <div className={`player-card ${isSelected ? 'player-card-select' : ''}`} onClick={()=>handleSelect(myPlayer)}>
             <div>
                 <a href="#" className="player-pic">
-                AB
+                    {getInitials(myPlayer.name)}
                 </a>
             </div>
             <div className="player-text">

@@ -1,4 +1,5 @@
-import { PlayerActionTypes } from './actions';
+import { DESELECT_PLAYER, PlayerActionTypes, SELECT_PLAYER } from './actions';
+
 
 export type Player = {
   id: number; 
@@ -29,6 +30,16 @@ const initialState: PlayersState = {
       blocks: 2,
       steals: 3,
     },
+    {
+      id: 2, 
+      name: 'Giannis Antetokounmpo',
+      position: 'PF,SF',
+      points: 16.4,
+      rebounds: 11.1,
+      assists: 3.3,
+      blocks: 2,
+      steals: 3,
+    },
   ]
 };
 
@@ -37,22 +48,19 @@ export function playersReducer(
   action: PlayerActionTypes
 ): PlayersState {
   switch (action.type) {
-    case 'SELECT_PLAYER': {
+    case SELECT_PLAYER: {
       return {
         ...state,
         selected: [
           ...state.selected,
-          action.meta.player
+          action.payload.player
         ]
       };
     }
-    case 'DESELECT_PLAYER': {
+    case DESELECT_PLAYER: {
       return {
         ...state,
-        selected: [
-          ...state.selected.slice(0,action.meta.playerIndex),
-          ...state.selected.slice(action.meta.playerIndex+1)
-        ]
+        selected: state.selected.filter(player => player.id !== action.payload.playerId)
       }
     }
     default:

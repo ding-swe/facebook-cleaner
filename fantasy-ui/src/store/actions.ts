@@ -13,22 +13,22 @@ interface SendMessageAction {
 
 interface DeleteMessageAction {
   type: typeof DELETE_MESSAGE;
-  meta: {
+  payload: {
     timestamp: number;
   };
 }
 
 interface SelectPlayerAction {
   type: typeof SELECT_PLAYER;
-  meta: {
+  payload: {
     player: Player; 
   };
 }
 
 interface DeselectPlayerAction {
   type: typeof DESELECT_PLAYER;
-  meta: {
-    playerIndex: number; 
+  payload: {
+    playerId: number; 
   };
 }
 
