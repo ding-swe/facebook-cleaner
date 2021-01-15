@@ -5,6 +5,8 @@ export const DELETE_MESSAGE = 'DELETE_MESSAGE';
 
 export const SELECT_PLAYER = 'SELECT_PLAYER';
 export const DESELECT_PLAYER = 'DESELECT_PLAYER';
+export const SELECT_ALL_PLAYERS = 'SELECT_ALL_PLAYERS';
+export const DESELECT_ALL_PLAYERS = 'DESELECT_ALL_PLAYERS';
 
 interface SendMessageAction {
   type: typeof SEND_MESSAGE;
@@ -32,5 +34,15 @@ interface DeselectPlayerAction {
   };
 }
 
+interface SelectAllPlayerAction {
+  type: typeof SELECT_ALL_PLAYERS;
+  payload: { };
+}
+
+interface DeselectAllPlayerAction {
+  type: typeof DESELECT_ALL_PLAYERS;
+  payload: { };
+}
+
 export type ChatActionTypes = SendMessageAction | DeleteMessageAction;
-export type PlayerActionTypes = SelectPlayerAction | DeselectPlayerAction; 
+export type PlayerActionTypes = SelectPlayerAction | DeselectPlayerAction | SelectAllPlayerAction | DeselectAllPlayerAction; 

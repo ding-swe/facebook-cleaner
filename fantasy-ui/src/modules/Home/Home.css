@@ -62,7 +62,7 @@
     text-decoration-color: var(--text-dark);
 }
 
-.player-selectors a{
+.player-selectors div{
     cursor: pointer;
     width: 33%; 
     text-align: center;

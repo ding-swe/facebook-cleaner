@@ -20,6 +20,7 @@
 
 .player-card-select {
     background-color: var( --bg-hover);
+    transition: var(--speed);
 }
 
 .player-card:hover {

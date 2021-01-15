@@ -1,4 +1,10 @@
-import { DESELECT_PLAYER, PlayerActionTypes, SELECT_PLAYER } from './actions';
+import { 
+  DESELECT_PLAYER,
+  PlayerActionTypes,
+  SELECT_PLAYER,
+  SELECT_ALL_PLAYERS,
+  DESELECT_ALL_PLAYERS,
+} from './actions';
 
 
 export type Player = {
@@ -61,6 +67,18 @@ export function playersReducer(
       return {
         ...state,
         selected: state.selected.filter(player => player.id !== action.payload.playerId)
+      }
+    }
+    case SELECT_ALL_PLAYERS: {
+      return {
+        ...state,
+        selected: []
+      }
+    }
+    case DESELECT_ALL_PLAYERS:{
+      return {
+        ...state,
+        selected: [] 
       }
     }
     default:

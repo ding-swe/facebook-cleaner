@@ -37,7 +37,7 @@ export default function PlayerCard(props: Props) {
     }
 
     function getInitials(name:string){
-        return name.split(" ").map((n, i)=>(i==0||i==1)&&n[0]).filter(n=>n).join(""); 
+        return name.split(" ").map((n, i)=>(i===0||i===1)&&n[0]).filter(n=>n).join(""); 
     }
     return (
         <div className={`player-card ${isSelected ? 'player-card-select' : ''}`} onClick={()=>handleSelect(myPlayer)}>
