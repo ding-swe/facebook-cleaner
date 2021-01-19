@@ -72,7 +72,7 @@ export function playersReducer(
     case SELECT_ALL_PLAYERS: {
       return {
         ...state,
-        selected: []
+        selected: state.players
       }
     }
     case DESELECT_ALL_PLAYERS:{
